@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNude"
+    tools:context=".Profile_fitri">
+
+    <RelativeLayout
+        android:id="@+id/layoutatas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/bg_profile"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/febri" />
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="FITRI FEBRIANTI"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/mhs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Informatic Engginering 17"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mhs"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/location"
+            android:text="Jl.Tanjung Sari GG.01 Karangploso"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/person" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gmail"
+            android:layout_below="@id/profile_image"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:background="@color/colorBrown"
+            android:padding="8dp"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/Gmail"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/gmail"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teks_gmail"
+                    android:text="Gmail"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/teks_gmail"
+                    android:text="ftrfbrnt99@gmail.com"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telepon"
+            android:layout_below="@id/gmail"
+            android:orientation="horizontal"
+            android:background="@color/colorBrown"
+            android:padding="8dp"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/Telepon"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/telpon"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tlpn"
+                    android:text="Telepon"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tlpn"
+                    android:text="081332637651"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Twitter"
+            android:layout_below="@id/telepon"
+            android:orientation="horizontal"
+            android:background="@color/colorBrown"
+            android:padding="8dp"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/twitter"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/twips"
+                    android:text="Twitter"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/twips"
+                    android:text="fbrntftr_"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Instagram"
+            android:layout_below="@id/Twitter"
+            android:orientation="horizontal"
+            android:background="@color/colorBrown"
+            android:padding="8dp"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/instagram"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/ig"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ig"
+                    android:text="Instagram"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ig"
+                    android:text="ftrfbrnt_"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
